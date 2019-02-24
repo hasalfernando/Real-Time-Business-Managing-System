@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="900.0" style="-fx-background-color: #082759;" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Application.AdminView">
+   <children>
+      <ImageView fitHeight="600.0" fitWidth="900.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@/Application/Images/fishing4.jpg" />
+         </image>
+      </ImageView>
+      <Button layoutX="617.0" layoutY="409.0" mnemonicParsing="false" onAction="#loadTransLog" prefHeight="75.0" prefWidth="215.0" style="-fx-background-color: #09a30c;" text="View the log of Transactions" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+         <font>
+            <Font name="Monospaced Bold" size="20.0" />
+         </font>
+         <effect>
+            <DropShadow offsetX="5.0" offsetY="5.0" />
+         </effect></Button>
+      <Button alignment="CENTER" layoutX="69.0" layoutY="409.0" mnemonicParsing="false" onAction="#loadCusTransactions" prefHeight="75.0" prefWidth="215.0" style="-fx-background-color: #09a30c;" text="Customer Transactions" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+         <font>
+            <Font name="Monospaced Bold" size="20.0" />
+         </font>
+         <effect>
+            <DropShadow offsetX="5.0" offsetY="5.0" />
+         </effect></Button>
+      <Button layoutX="341.0" layoutY="409.0" mnemonicParsing="false" onAction="#loadAddStaff" prefHeight="75.0" prefWidth="215.0" style="-fx-background-color: #09a30c;" text="Add Staff Member Accounts" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+         <font>
+            <Font name="Monospaced Bold" size="20.0" />
+         </font>
+         <effect>
+            <DropShadow offsetX="5.0" offsetY="5.0" />
+         </effect></Button>
+      <Button layoutX="800.0" layoutY="-3.0" mnemonicParsing="false" onAction="#logOutPushed" text="Log out">
+         <font>
+            <Font name="Monospaced Bold" size="18.0" />
+         </font></Button>
+      <Label alignment="CENTER" layoutX="299.0" layoutY="147.0" prefHeight="26.0" prefWidth="327.0" text="Hello Jeff !" textFill="WHITE">
+         <font>
+            <Font name="Rockwell" size="63.0" />
+         </font>
+         <effect>
+            <DropShadow spread="0.16" />
+         </effect>
+      </Label>
+      <Button alignment="CENTER" layoutX="345.0" layoutY="501.0" mnemonicParsing="false" onAction="#loadCusView" prefHeight="75.0" prefWidth="215.0" style="-fx-background-color: #09a30c;" text="Check Customer Mode" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+         <font>
+            <Font name="Monospaced Bold" size="20.0" />
+         </font>
+         <effect>
+            <DropShadow offsetX="5.0" offsetY="5.0" />
+         </effect>
+      </Button>
+      <Button alignment="CENTER" layoutX="617.0" layoutY="501.0" mnemonicParsing="false" onAction="#loadStfView" prefHeight="75.0" prefWidth="215.0" style="-fx-background-color: #09a30c;" text="Check Staff Mode" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+         <font>
+            <Font name="Monospaced Bold" size="20.0" />
+         </font>
+         <effect>
+            <DropShadow offsetX="5.0" offsetY="5.0" />
+         </effect>
+      </Button>
+      <Label layoutX="3.0" layoutY="531.0" prefHeight="64.0" prefWidth="337.0" text="- Where the real fishermen shop -" textFill="WHITE">
+         <font>
+            <Font name="Congrats Calligraphy" size="37.0" />
+         </font>
+         <effect>
+            <DropShadow spread="0.9" />
+         </effect>
+      </Label>
+      <Label alignment="CENTER" layoutX="93.0" layoutY="501.0" prefHeight="26.0" prefWidth="117.0" text="J.F.S" textFill="WHITE">
+         <font>
+            <Font name="Stencil" size="35.0" />
+         </font>
+         <effect>
+            <DropShadow spread="0.77" />
+         </effect>
+      </Label>
+   </children>
+</AnchorPane>

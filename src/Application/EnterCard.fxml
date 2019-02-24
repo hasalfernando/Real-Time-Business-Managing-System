@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Application.EnterCard">
+   <children>
+      <ImageView fitHeight="614.0" fitWidth="900.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@/Application/Images/fishing1.jpg" />
+         </image></ImageView>
+      <Label alignment="CENTER" layoutX="129.0" layoutY="131.0" text="Enter Credit Card Details" textFill="WHITE">
+         <font>
+            <Font name="Monospaced Bold" size="35.0" />
+         </font>
+         <effect>
+            <DropShadow spread="0.59" />
+         </effect>
+      </Label>
+      <Label alignment="CENTER" layoutX="129.0" layoutY="213.0" text="Credit Card Number  :" textFill="WHITE">
+         <font>
+            <Font name="Monospaced Bold" size="20.0" />
+         </font>
+         <effect>
+            <DropShadow spread="0.59" />
+         </effect>
+      </Label>
+      <Label alignment="CENTER" layoutX="129.0" layoutY="261.0" text="Card Expiry Date    :" textFill="#eeeeee">
+         <font>
+            <Font name="Monospaced Bold" size="20.0" />
+         </font>
+         <effect>
+            <DropShadow spread="0.59" />
+         </effect>
+      </Label>
+      <Label alignment="CENTER" layoutX="129.0" layoutY="311.0" text="Card Security Code  :" textFill="#eeeeee">
+         <font>
+            <Font name="Monospaced Bold" size="20.0" />
+         </font>
+         <effect>
+            <DropShadow spread="0.59" />
+         </effect>
+      </Label>
+      <TextField fx:id="cNum" layoutX="415.0" layoutY="210.0" />
+      <DatePicker fx:id="eDate" layoutX="415.0" layoutY="258.0" />
+      <PasswordField fx:id="sCode" layoutX="415.0" layoutY="308.0" />
+      <Button layoutX="437.0" layoutY="361.0" mnemonicParsing="false" onAction="#verifyCreditCardDetails" style="-fx-background-color: #09a30c;" text="Confirm Payment" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></Button>
+      <Button layoutX="818.0" layoutY="-1.0" mnemonicParsing="false" onAction="#logOutPushed" prefHeight="30.0" prefWidth="82.0" style="-fx-background-color: #d10808;" text="Log out" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></Button>
+      <Label layoutX="3.0" layoutY="532.0" prefHeight="64.0" prefWidth="337.0" text="- Where the real fishermen shop -" textFill="WHITE">
+         <font>
+            <Font name="Congrats Calligraphy" size="37.0" />
+         </font>
+         <effect>
+            <DropShadow spread="0.9" />
+         </effect>
+      </Label>
+      <Label alignment="CENTER" layoutX="95.0" layoutY="503.0" prefHeight="26.0" prefWidth="117.0" text="J.F.S" textFill="WHITE">
+         <font>
+            <Font name="Stencil" size="35.0" />
+         </font>
+         <effect>
+            <DropShadow spread="0.77" />
+         </effect>
+      </Label>
+      <Button alignment="CENTER" layoutY="-1.0" mnemonicParsing="false" onAction="#loadPrevious" prefHeight="30.0" prefWidth="82.0" style="-fx-background-color: #d10808;" text="Previous" textFill="WHITE" wrapText="true">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <Button alignment="CENTER" layoutX="403.0" layoutY="-1.0" mnemonicParsing="false" onAction="#loadMainMenu" prefHeight="31.0" prefWidth="106.0" style="-fx-background-color: #d10808;" text="Main Menu" textFill="WHITE" wrapText="true">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

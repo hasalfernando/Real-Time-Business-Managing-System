@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Rectangle2D?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="900.0" style="-fx-background-color: #082759;" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Application.AddStaff">
+   <children>
+      <ImageView fitHeight="600.0" fitWidth="900.0" layoutX="11.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true" scaleX="1.03" scaleY="1.02">
+         <image>
+            <Image url="@/Application/Images/fishing8.jpg" />
+         </image>
+         <viewport>
+            <Rectangle2D />
+         </viewport></ImageView>
+      <Label layoutX="434.0" layoutY="282.0" text="Add username (Email) :" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+         <effect>
+            <DropShadow spread="0.6" />
+         </effect></Label>
+      <Label layoutX="508.0" layoutY="339.0" text="Add password :" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+         <effect>
+            <DropShadow spread="0.6" />
+         </effect></Label>
+      <PasswordField fx:id="addPassword" layoutX="673.0" layoutY="338.0" />
+      <TextField fx:id="addUsername" layoutX="673.0" layoutY="281.0" />
+      <Label alignment="CENTER" layoutX="673.0" layoutY="217.0" prefHeight="42.0" prefWidth="187.0" text="Staff" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+         <effect>
+            <DropShadow spread="0.6" />
+         </effect>
+      </Label>
+      <Label alignment="CENTER" layoutX="503.0" layoutY="223.0" prefHeight="30.0" prefWidth="140.0" text="Department :" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+         <effect>
+            <DropShadow spread="0.6" />
+         </effect>
+      </Label>
+      <Label layoutX="473.0" layoutY="397.0" text="Confirm password :" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+         <effect>
+            <DropShadow spread="0.6" />
+         </effect>
+      </Label>
+      <PasswordField fx:id="confirmPassword" layoutX="673.0" layoutY="397.0" />
+      <Button layoutX="675.0" layoutY="457.0" mnemonicParsing="false" onAction="#addUser" prefHeight="31.0" prefWidth="183.0" style="-fx-background-color: #09a30c;" text="Add User" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></Button>
+      <Label layoutX="14.0" layoutY="541.0" prefHeight="64.0" prefWidth="337.0" text="- Where the real fishermen shop -" textFill="WHITE">
+         <font>
+            <Font name="Congrats Calligraphy" size="37.0" />
+         </font>
+         <effect>
+            <DropShadow spread="0.9" />
+         </effect>
+      </Label>
+      <Label alignment="CENTER" layoutX="106.0" layoutY="511.0" prefHeight="26.0" prefWidth="117.0" text="J.F.S" textFill="WHITE">
+         <font>
+            <Font name="Stencil" size="35.0" />
+         </font>
+         <effect>
+            <DropShadow spread="0.77" />
+         </effect>
+      </Label>
+      <Button alignment="CENTER" layoutY="-1.0" mnemonicParsing="false" onAction="#loadMainMenu" prefHeight="30.0" prefWidth="82.0" style="-fx-background-color: #d10808;" text="Previous" textFill="WHITE" wrapText="true">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <Button alignment="CENTER" layoutX="835.0" mnemonicParsing="false" onAction="#logOutPushed" prefHeight="30.0" prefWidth="82.0" style="-fx-background-color: #d10808;" text="Logout" textFill="WHITE" wrapText="true">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <Button alignment="CENTER" layoutX="406.0" mnemonicParsing="false" onAction="#loadMainMenu" prefHeight="31.0" prefWidth="106.0" style="-fx-background-color: #d10808;" text="Main Menu" textFill="WHITE" wrapText="true">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

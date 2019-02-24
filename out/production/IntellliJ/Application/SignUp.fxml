@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="900.0" style="-fx-background-color: #082759;" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Application.SignUp">
+   <children>
+      <ImageView fitHeight="600.0" fitWidth="912.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@/Application/Images/fishing4.jpg" />
+         </image>
+      </ImageView>
+      <Label alignment="CENTER" layoutX="361.0" layoutY="31.0" prefHeight="31.0" prefWidth="238.0" text="User Sign Up" textFill="#f2f2f2">
+         <font>
+            <Font name="System Bold" size="34.0" />
+         </font>
+         <effect>
+            <DropShadow spread="0.24" />
+         </effect>
+      </Label>
+      <Label alignment="CENTER_RIGHT" layoutX="66.0" layoutY="188.0" prefHeight="31.0" prefWidth="141.0" text="First Name :" textFill="WHITE" textOverrun="CLIP">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+         <effect>
+            <DropShadow spread="0.24" />
+         </effect>
+      </Label>
+      <Label alignment="CENTER_RIGHT" layoutX="66.0" layoutY="222.0" prefHeight="31.0" prefWidth="141.0" text="Last Name :" textFill="WHITE" textOverrun="CLIP">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+         <effect>
+            <DropShadow spread="0.24" />
+         </effect>
+      </Label>
+      <Label alignment="CENTER_RIGHT" layoutX="428.0" layoutY="189.0" prefHeight="31.0" prefWidth="141.0" text="Home Address :" textFill="WHITE" textOverrun="CLIP">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+         <effect>
+            <DropShadow spread="0.24" />
+         </effect>
+      </Label>
+      <Label alignment="CENTER_RIGHT" layoutX="66.0" layoutY="290.0" prefHeight="31.0" prefWidth="141.0" text="Email :" textFill="WHITE" textOverrun="CLIP">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+         <effect>
+            <DropShadow spread="0.24" />
+         </effect>
+      </Label>
+      <Label alignment="CENTER_RIGHT" layoutX="66.0" layoutY="255.0" prefHeight="31.0" prefWidth="141.0" text="Phone No :" textFill="WHITE" textOverrun="CLIP">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+         <effect>
+            <DropShadow spread="0.24" />
+         </effect>
+      </Label>
+      <Label alignment="CENTER_RIGHT" layoutX="428.0" layoutY="255.0" prefHeight="31.0" prefWidth="141.0" text="Password :" textFill="WHITE" textOverrun="CLIP">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+         <effect>
+            <DropShadow spread="0.24" />
+         </effect>
+      </Label>
+      <Label alignment="CENTER_RIGHT" layoutX="428.0" layoutY="289.0" prefHeight="31.0" prefWidth="141.0" text="Confirm Password :" textFill="WHITE" textOverrun="CLIP">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+         <effect>
+            <DropShadow spread="0.24" />
+         </effect>
+      </Label>
+      <TextField fx:id="firstName" layoutX="219.0" layoutY="192.0" minHeight="25.0" minWidth="5.0" prefHeight="5.0" prefWidth="187.0" promptText="First Name" />
+      <TextField fx:id="lastName" layoutX="219.0" layoutY="225.0" minHeight="25.0" prefHeight="25.0" prefWidth="187.0" promptText="Last Name" />
+      <TextField fx:id="address" alignment="TOP_LEFT" layoutX="582.0" layoutY="192.0" minHeight="25.0" prefHeight="61.0" prefWidth="187.0" promptText="Home Address" />
+      <TextField fx:id="email" layoutX="219.0" layoutY="294.0" minHeight="25.0" prefHeight="25.0" prefWidth="187.0" promptText="e-mail" />
+      <TextField fx:id="phone" layoutX="219.0" layoutY="259.0" minHeight="25.0" prefHeight="25.0" prefWidth="187.0" promptText="Phone Number" />
+      <Button layoutX="625.0" layoutY="381.0" mnemonicParsing="false" onAction="#signUpUser" prefHeight="31.0" prefWidth="106.0" style="-fx-background-color: #a8ff56;" text="Register">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+         <effect>
+            <DropShadow spread="0.24" />
+         </effect>
+      </Button>
+      <Label alignment="CENTER" layoutX="317.0" layoutY="518.0" prefHeight="24.0" prefWidth="272.0" text="Do you already have an account ?" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font>
+         <effect>
+            <DropShadow spread="0.24" />
+         </effect>
+      </Label>
+      <Button layoutX="400.0" layoutY="550.0" mnemonicParsing="false" onAction="#goToLogin" prefHeight="31.0" prefWidth="106.0" style="-fx-background-color: #a8ff56;" text="Go to login">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+         <effect>
+            <DropShadow spread="0.24" />
+         </effect>
+      </Button>
+      <CheckBox fx:id="agreeNewsLetter" layoutX="247.0" layoutY="360.0" mnemonicParsing="false" text="I agree to recieve the monthly email newsletter" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+         <effect>
+            <DropShadow spread="0.71" />
+         </effect>
+      </CheckBox>
+      <PasswordField fx:id="password" layoutX="582.0" layoutY="259.0" minHeight="25.0" prefHeight="25.0" prefWidth="187.0" promptText="Password" />
+      <PasswordField fx:id="passwordConfirmation" layoutX="582.0" layoutY="294.0" minHeight="25.0" prefHeight="25.0" prefWidth="187.0" promptText="Confirm Password" />
+      <Label layoutX="117.0" layoutY="109.0" text="*It is compulsory to fill all the fields">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="117.0" layoutY="130.0" text="*Use a password which is longer than 8 characters and has 2 or more non Alphabetic characters">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="117.0" layoutY="151.0" text="*After registration, proceed to login from the account email and password you registered">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="532.0" prefHeight="64.0" prefWidth="337.0" text="- Where the real fishermen shop -" textFill="WHITE">
+         <font>
+            <Font name="Congrats Calligraphy" size="37.0" />
+         </font>
+         <effect>
+            <DropShadow spread="0.9" />
+         </effect>
+      </Label>
+      <Label alignment="CENTER" layoutX="102.0" layoutY="496.0" prefHeight="26.0" prefWidth="117.0" text="J.F.S" textFill="WHITE">
+         <font>
+            <Font name="Stencil" size="35.0" />
+         </font>
+         <effect>
+            <DropShadow spread="0.77" />
+         </effect>
+      </Label>
+      <TextField fx:id="pinConfirmation" alignment="CENTER" layoutX="625.0" layoutY="425.0" prefHeight="71.0" prefWidth="207.0" promptText="Confirm Pin" visible="false">
+         <font>
+            <Font size="33.0" />
+         </font>
+      </TextField>
+      <Button fx:id="pinConfirmationButton" layoutX="625.0" layoutY="503.0" mnemonicParsing="false" onAction="#pinConfirmation" prefHeight="31.0" prefWidth="106.0" style="-fx-background-color: #a8ff56;" text="Confirm" visible="false">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+         <effect>
+            <DropShadow spread="0.24" />
+         </effect>
+      </Button>
+   </children>
+</AnchorPane>

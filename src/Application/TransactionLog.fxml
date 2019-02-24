@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Application.TransactionLog">
+   <children>
+      <ImageView fitHeight="600.0" fitWidth="900.0" layoutX="-5.0" layoutY="-7.0" pickOnBounds="true" preserveRatio="true" scaleX="1.02" scaleY="1.03">
+         <image>
+            <Image url="@/Application/Images/fishing3.jpg" />
+         </image></ImageView>
+      <Label layoutX="114.0" layoutY="52.0" text="This is JFS transactions log" textFill="WHITE">
+         <font>
+            <Font name="Monospaced Bold" size="40.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Label>
+      <ListView fx:id="transacListView" layoutX="38.0" layoutY="190.0" opacity="0.9" prefHeight="305.0" prefWidth="821.0" />
+      <DatePicker fx:id="datePicker" layoutX="102.0" layoutY="116.0" />
+      <Label layoutX="6.0" layoutY="530.0" prefHeight="64.0" prefWidth="337.0" text="- Where the real fishermen shop -" textFill="WHITE">
+         <font>
+            <Font name="Congrats Calligraphy" size="37.0" />
+         </font>
+         <effect>
+            <DropShadow spread="0.9" />
+         </effect>
+      </Label>
+      <Label alignment="CENTER" layoutX="102.0" layoutY="495.0" prefHeight="26.0" prefWidth="117.0" text="J.F.S" textFill="WHITE">
+         <font>
+            <Font name="Stencil" size="35.0" />
+         </font>
+         <effect>
+            <DropShadow spread="0.77" />
+         </effect>
+      </Label>
+      <Label alignment="CENTER" layoutX="38.0" layoutY="143.0" prefHeight="48.0" prefWidth="39.0" text="Tran.Id" textFill="WHITE" wrapText="true">
+         <font>
+            <Font name="Monospaced Bold" size="16.0" />
+         </font>
+         <effect>
+            <DropShadow spread="0.32" />
+         </effect>
+      </Label>
+      <Label alignment="CENTER" layoutX="114.0" layoutY="160.0" text="Username" textFill="WHITE">
+         <font>
+            <Font name="Monospaced Bold" size="16.0" />
+         </font>
+         <effect>
+            <DropShadow spread="0.32" />
+         </effect>
+      </Label>
+      <Label alignment="CENTER" layoutX="234.0" layoutY="160.0" text="Card No." textFill="WHITE">
+         <font>
+            <Font name="Monospaced Bold" size="16.0" />
+         </font>
+         <effect>
+            <DropShadow spread="0.32" />
+         </effect>
+      </Label>
+      <Label alignment="CENTER" layoutX="343.0" layoutY="160.0" text="Ex.Date" textFill="WHITE">
+         <font>
+            <Font name="Monospaced Bold" size="16.0" />
+         </font>
+         <effect>
+            <DropShadow spread="0.32" />
+         </effect>
+      </Label>
+      <Label alignment="CENTER" layoutX="514.0" layoutY="160.0" text="Time" textFill="WHITE">
+         <font>
+            <Font name="Monospaced Bold" size="16.0" />
+         </font>
+         <effect>
+            <DropShadow spread="0.32" />
+         </effect>
+      </Label>
+      <Label alignment="CENTER" layoutX="633.0" layoutY="160.0" text="Date" textFill="WHITE">
+         <font>
+            <Font name="Monospaced Bold" size="16.0" />
+         </font>
+         <effect>
+            <DropShadow spread="0.32" />
+         </effect>
+      </Label>
+      <Label alignment="CENTER" layoutX="748.0" layoutY="160.0" text="Paid" textFill="WHITE">
+         <font>
+            <Font name="Monospaced Bold" size="16.0" />
+         </font>
+         <effect>
+            <DropShadow spread="0.32" />
+         </effect>
+      </Label>
+      <Button alignment="CENTER" layoutX="320.0" layoutY="116.0" mnemonicParsing="false" onAction="#viewTranForDate" prefHeight="31.0" prefWidth="151.0" style="-fx-background-color: #09a30c; -fx-border-radius: 40;" text="View Transactions" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <Button alignment="CENTER" layoutX="-3.0" mnemonicParsing="false" onAction="#loadMainMenu" prefHeight="30.0" prefWidth="82.0" style="-fx-background-color: #d10808;" text="Previous" textFill="WHITE" wrapText="true">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <Button alignment="CENTER" layoutX="408.0" layoutY="-1.0" mnemonicParsing="false" onAction="#loadMainMenu" prefHeight="31.0" prefWidth="106.0" style="-fx-background-color: #d10808;" text="Main Menu" textFill="WHITE" wrapText="true">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <Button alignment="CENTER" layoutX="818.0" mnemonicParsing="false" onAction="#logOutPushed" prefHeight="30.0" prefWidth="82.0" style="-fx-background-color: #d10808;" text="Log out" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
